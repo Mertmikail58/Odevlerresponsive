@@ -1,0 +1,101 @@
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "k1 k2 k3 k4"
+    "k5 k6 k7 k8"
+    "k9 k10 k11 k12"
+    "k13 k14 k15 k16"
+    ;
+    
+}
+:nth-child(1){
+    background-color: yellow;
+grid-area: k1;
+}
+:nth-child(2){
+    background-color: white;
+    grid-area: k2;
+}
+:nth-child(3){
+    background-color: darkblue;
+    grid-area: k3;
+}
+:nth-child(4){
+    background-color: white;
+    grid-area: k4;
+}
+:nth-child(5){
+    background-color: white;
+    grid-area: k5;
+}
+:nth-child(6){
+    background-color: yellow;
+    grid-area: k6;
+}
+:nth-child(7){
+    background-color: white;
+    grid-area: k7;
+}
+:nth-child(8){
+    background-color: darkblue;
+    grid-area: k8;
+}
+:nth-child(9){
+    background-color: darkblue;
+    grid-area: k9;
+}
+:nth-child(10){
+    background-color: white;
+    grid-area: k10;
+}
+:nth-child(11){
+    background-color: yellow;
+    grid-area: k11;
+}
+:nth-child(12){
+    background-color: white;
+    grid-area: k12;
+}
+:nth-child(13){
+    background-color: white;
+    grid-area: k13;
+}
+:nth-child(14){
+    background-color: yellow;
+    grid-area: k14;  
+}
+:nth-child(15){
+    background-color: white;
+    grid-area: k15;
+}
+:nth-child(16){
+    background-color: darkblue;
+    grid-area: k16;
+}
+@media screen and (max-width:600px){
+    body{
+        grid-template-areas:
+        "k1 k2 k3"
+        "k4 k5 k6"
+        "k7 k8 k9"
+        "k10 k11 k12"
+        "k13 k14 k15"
+        "k16 k16 k16"
+        ;
+    }     
+}
+@media screen and (max-width:320px){
+    body{
+        grid-template-areas:
+        "k1 k2"
+        "k3 k4"
+        "k5 k6"
+        "k7 k8"
+        "k9 k10"
+        "k11 k12"
+        "k13 k14"
+        "k15 k16"
+        ;
+    }     
+}
